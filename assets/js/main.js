@@ -5,4 +5,12 @@ const listEmail = ["andrea.r.4845@gmail.com", "andrea.r.94.varie@gmail.com", "gi
 
 //Chiedi all’utente la sua email
 const myEmail = prompt("dimmi la tua email");
-console.log(myEmail)
+console.log(myEmail);
+
+//controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
+
+if  ( myEmail == listEmail ){
+    console.log("La tua email è presente, gioca ora!")
+} else {
+    console.log("registrati correttamente per giocare!")
+}
