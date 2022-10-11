@@ -32,6 +32,8 @@ console.log(pcNumber);
 
 if (myNumber > pcNumber){
     console.log("hai vinto", myNumber)
-} else {
+} else if (myNumber < pcNumber){
     console.log("hai perso", pcNumber)
+} else  {
+    console.log("avete pareggiato scegli un altro numero")
 }
