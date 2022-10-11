@@ -18,16 +18,7 @@ if  ( myEmail === element ){
 } 
 
 } console.log(isValid) 
-/*const i = listEmail.length;
-const register = (myEmail != i)
-console.log(register, "registrati")*/
 
-    
-
-
-/*else {
-    console.log("registrati correttamente per giocare!")
-}*/
 
 
 //Gioco dei dadi
