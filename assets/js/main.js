@@ -1,17 +1,26 @@
 //Mail
 //Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
 
-/*const listEmail = ["andrea.r.4845@gmail.com", "andrea.r.94.varie@gmail.com", "giordanategazio@gmail.com"];
+const listEmail = ["andrea.r.4845@gmail.com", "andrea.r.94.varie@gmail.com", "giordanategazio@gmail.com"];
 
 //Chiedi all’utente la sua email
 const myEmail = prompt("dimmi la tua email");
 console.log(myEmail);
 
 //controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
-
-if  ( myEmail == listEmail ){
+for (let i = 0; i < listEmail.length; i++ ){
+    const element = listEmail[i]
+if  ( myEmail === element ){
     console.log("La tua email è presente, gioca ora!")
-} else {
+} 
+}
+for (let i = 0; i < listEmail.length; i++ ){
+    const element = listEmail[i]
+if  ( myEmail != element ){
+    console.log("registrati")
+} 
+}
+/*else {
     console.log("registrati correttamente per giocare!")
 }*/
 
@@ -20,7 +29,7 @@ if  ( myEmail == listEmail ){
 
 //Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. 
 
-const myNumber = Number(prompt ('Scegli il tuo numero tra 1 e 6'));
+/*const myNumber = Number(prompt ('Scegli il tuo numero tra 1 e 6'));
 const pcNumber = Math.floor(Math.random() *6)+1;
 
 
@@ -36,4 +45,4 @@ if (myNumber > pcNumber){
     console.log("hai perso", pcNumber)
 } else  {
     console.log("avete pareggiato scegli un altro numero")
-}
+}*/
