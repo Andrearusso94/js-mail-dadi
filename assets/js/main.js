@@ -7,19 +7,24 @@ const listEmail = ["andrea.r.4845@gmail.com", "andrea.r.94.varie@gmail.com", "gi
 const myEmail = prompt("dimmi la tua email");
 console.log(myEmail);
 
+let isValid = false;
 //controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
 for (let i = 0; i < listEmail.length; i++ ){
-    const element = listEmail[i]
+    const element = listEmail[i];
+    
 if  ( myEmail === element ){
-    console.log("La tua email è presente, gioca ora!")
+    isValid = true;
+   
 } 
-}
-for (let i = 0; i < listEmail.length; i++ ){
-    const element = listEmail[i]
-if  ( myEmail != element ){
-    console.log("registrati")
-} 
-}
+
+} console.log(isValid) 
+/*const i = listEmail.length;
+const register = (myEmail != i)
+console.log(register, "registrati")*/
+
+    
+
+
 /*else {
     console.log("registrati correttamente per giocare!")
 }*/
